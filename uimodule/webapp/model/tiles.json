@@ -1,0 +1,14 @@
+[
+    {
+        "title" : "First tile",
+        "route": "first_tile"
+    },
+    {
+        "title" : "Second tile",
+        "route": "second_tile"
+    },
+    {
+        "title" : "Third tile",
+        "route": "third_tile"
+    }
+]

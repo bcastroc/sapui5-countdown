@@ -1,6 +1,6 @@
 # myUI5App
 
-Insert the purpose of this project and some interesting infos here
+Just a demo app in order to learn about SAPUI5 because I need to
 
 ## Credits
 
