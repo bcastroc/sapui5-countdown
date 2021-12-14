@@ -1,7 +1,7 @@
 [
     {
-        "title" : "First tile",
-        "route": "first_tile"
+        "title" : "Event countdown",
+        "route": "countdown_tile"
     },
     {
         "title" : "Second tile",

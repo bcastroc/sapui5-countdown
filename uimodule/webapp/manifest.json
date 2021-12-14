@@ -77,6 +77,13 @@
                     "target": [
                         "TilesView"
                     ]
+                },
+                {
+                    "name" : "countdown_tile",
+                    "pattern": "countdown_tile",
+                    "target":[
+                        "CountdownTarget"
+                    ]
                 }
             ],
             "targets": {
@@ -93,6 +100,12 @@
                     "clearControlAggregation": false,
                     "viewId": "Tiles",
                     "viewName": "Tiles",
+                    "controlId": "main_app"
+                },
+                "CountdownTarget": {
+                    "viewType": "XML",                                        
+                    "viewId": "countdown.Countdown",
+                    "viewName": "countdown.Countdown",
                     "controlId": "main_app"
                 }
             }

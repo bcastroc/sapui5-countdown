@@ -13,6 +13,12 @@ sap.ui.define([
                 const mytilesModel = new JSONModel("../model/tiles.json");
                 this.getView().setModel(mytilesModel, "tiles");
                 
+            },
+
+            onPress: function (oRoute) {
+                console.log(oRoute);
+                this.getOwnerComponent().getRouter().navTo(oRoute);
+                
             }
         });
     });

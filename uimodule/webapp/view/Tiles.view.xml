@@ -13,7 +13,7 @@
         <GenericTile 
             class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" 
             header="{tiles>title}"  
-            press="onPress"
+            press="onPress(${tiles>route})"
 		    frameType="OneByHalf" 
             subheader="Subtitle">
 		

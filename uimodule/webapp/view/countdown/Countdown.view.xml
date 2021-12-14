@@ -1,0 +1,19 @@
+<mvc:View
+    controllerName="local.myUI5App.controller.countdown.Countdown"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+    xmlns:l="sap.ui.layout">
+
+    <Page id="pagetiles" showHeader="false">
+
+       <Button  text="Coming Soon"
+                press="onPress"
+                ariaDescribedBy="comingSoonButtonDescription genericButtonDescription"
+                enabled="false">
+					
+        </Button>
+        
+    </Page>
+
+</mvc:View>
