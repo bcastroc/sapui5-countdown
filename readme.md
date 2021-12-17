@@ -1,7 +1,20 @@
 # myUI5App
 
-Just a demo app in order to learn about SAPUI5 because I need to
+## API and sample code 
+* https://sapui5.hana.ondemand.com/
 
-## Credits
+## Getting started
+### Basic UI5 - use easy-ui5 generator
+* https://www.npmjs.com/package/generator-easy-ui5
+* npm install -g yo generator-easy-ui5
+* Scaffold project -> $ yo easy-ui5 project
 
-This project has been generated with 💙 and [easy-ui5](https://github.com/SAP)
+## Run project
+To run project run: 
+$ npm start
+
+### Project based on example from sap blog
+* https://blogs.sap.com/2021/06/29/10-sapui5-projects-for-beginners/
+
+### Original code
+https://github.com/Technology-Enthusiast/10-SAPUI5-Projects/tree/master/com.te.teProjects
