@@ -35,6 +35,7 @@
             "city": "San Diego",
             "pocode": "R5C-2J6",
             "status": "P"
+<<<<<<< HEAD
         },
         {
             "ponum": 1000000003,
@@ -47,6 +48,8 @@
             "city": "San Diego",
             "pocode": "R5C-2J6",
             "status": "E"
+=======
+>>>>>>> 12aefa125b91ad79b4855d97a9ee224a04c74ba2
         }
     ]
 }
