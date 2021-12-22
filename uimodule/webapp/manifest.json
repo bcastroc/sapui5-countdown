@@ -105,6 +105,13 @@
                     "target":[
                         "CovidPieTarget"
                     ]
+                },
+                {
+                    "name" : "cpoq_list",
+                    "pattern": "cpoq_list",
+                    "target":[
+                        "CPOQTarget"
+                    ]
                 }
             ],
             "targets": {
@@ -145,6 +152,12 @@
                     "viewType": "XML",                                        
                     "viewId": "covid.Covid_pie",
                     "viewName": "covid.Covid_pie",
+                    "controlId": "main_app"
+                },
+                "CPOQTarget": {
+                    "viewType": "XML",                                        
+                    "viewId": "cpoq.cpoq_list",
+                    "viewName": "cpoq.cpoq_list",
                     "controlId": "main_app"
                 }
             }

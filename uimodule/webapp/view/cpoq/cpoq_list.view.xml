@@ -1,0 +1,80 @@
+<mvc:View xmlns:simple="sap.gantt.simple"
+	controllerName="local.myUI5App.controller.cpoq.cpoq_list"
+	xmlns="sap.ui.table"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:u="sap.ui.unified"
+	xmlns:c="sap.ui.core"
+	xmlns:m="sap.m"
+    height="100%">
+	<m:Page
+		showHeader="true"        
+		enableScrolling="false"
+		class="sapUiContentPadding">
+        <m:customHeader>
+            <m:Toolbar >
+                <m:Title text="Central PO Queue" level='H2' ></m:Title>
+            </m:Toolbar>
+        </m:customHeader>
+		<m:content>
+			<Table
+				rows="{/data}"
+				selectionMode="MultiToggle"
+				visibleRowCount="7"
+				paste="onPaste"
+				ariaLabelledBy="title">
+				<extension>
+					<m:OverflowToolbar style="Clear">
+						<m:Title id="title" text="Purchase orders"/>
+					</m:OverflowToolbar>
+				</extension>
+				<columns>
+					<Column width="6rem">
+						<m:Label text="PO. number" />
+						<template>
+							<m:Text text="{ponum}" wrapping="false" />
+						</template>
+					</Column>
+					<Column width="8rem">
+						<m:Label text="Material number" />
+						<template>
+							<m:Label text="{matnum}"/>
+						</template>
+					</Column>
+					<Column width="20rem" >
+						<m:Label text="Description" />
+						<template>
+							<m:Label text="{desc}" />
+						</template>
+					</Column>
+					<Column width="5rem">
+						<m:Label text="Quantity" />
+						<template>
+							<m:Label text="{qty}"></m:Label>
+						</template>
+					</Column>
+					<Column width="4rem">
+						<m:Label text="UoM" />
+						<template>
+							<m:Label text="{uom}" />
+						</template>
+					</Column>
+					<Column width="8rem">
+						<m:Label text="Facility Name" />
+						<template>
+							<m:Label text="{facname}" />								
+						</template>
+					</Column>					
+					<Column width="6rem" hAlign="Center">
+						<m:Label text="Posted" />
+						<template>
+							<c:Icon src="{
+								path: 'status',
+								formatter: '.formatAvailableToIcon'
+							}"/>
+						</template>
+					</Column>										
+				</columns>
+			</Table>
+		</m:content>
+	</m:Page>
+</mvc:View>
