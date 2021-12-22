@@ -47,6 +47,7 @@ sap.ui.define([
                     }
                 });
                 var dataModel = new JSONModel(this.dataPath + "/history.covid.data.in.json");
+
                 oVizFrame.setModel(dataModel);
 
                 var oPopOver = this.getView().byId("idPopOver");
