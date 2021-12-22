@@ -1,0 +1,61 @@
+<mvc:View
+    controllerName="local.myUI5App.controller.covid.Covid_pie"
+    xmlns="sap.m"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:viz="sap.viz.ui5.controls" 
+    xmlns:layout="sap.ui.layout"
+    xmlns:viz.feeds="sap.viz.ui5.controls.common.feeds"
+    xmlns:viz.data="sap.viz.ui5.data" height="100%"
+    >
+
+    <Page id="covid_pie_page" showHeader="true">
+
+    <customHeader>
+        <Bar>
+            <contentMiddle>
+                <Title level="H1" text="Pie chart latest cases"/>
+            </contentMiddle>            
+        </Bar>
+    </customHeader>
+    <subHeader>
+        <Bar>
+            <contentLeft>
+                <Button text="Back to tracker" enabled="true"  press="onPressTracker" />
+                <Button text="Go to List" enabled="true" press="onPressList" />
+            </contentLeft>
+            <contentRight>                
+                <ToggleButton icon="sap-icon://home" enabled="true" press="onPressHome" />
+            </contentRight>
+        </Bar>
+    </subHeader>
+
+    <layout:FixFlex id='chartFixFlex' minFlexSize="250">
+    <layout:flexContent>
+        <viz:Popover id="idPopOver"></viz:Popover>
+            <viz:VizFrame id="idVizFrame" uiConfig="{applicationSet:'fiori'}"
+                height='90%' width="100%" vizType='pie'>
+                <viz:dataset>
+                    <viz.data:FlattenedDataset data="{/data/regional}">
+                        <viz.data:dimensions>
+                            <viz.data:DimensionDefinition name="location"
+                                value="{loc}" />
+                        </viz.data:dimensions>
+                        <viz.data:measures>
+                            <viz.data:MeasureDefinition name="total"
+                                value="{totalConfirmed}" />
+                        </viz.data:measures>
+                    </viz.data:FlattenedDataset>
+                </viz:dataset>
+
+                <viz:feeds>
+                    <viz.feeds:FeedItem uid="size" type="Measure"
+                        values="total" />
+                    <viz.feeds:FeedItem uid="color" type="Dimension"
+                        values="location" />
+                </viz:feeds>
+            </viz:VizFrame>
+    </layout:flexContent>
+    </layout:FixFlex>
+    </Page>
+
+</mvc:View>

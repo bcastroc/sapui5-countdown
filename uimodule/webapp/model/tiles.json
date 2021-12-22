@@ -1,14 +1,10 @@
 [
     {
-        "title" : "Event countdown",
+        "title" : "xmas Countdown",
         "route": "countdown_tile"
     },
     {
-        "title" : "Second tile",
-        "route": "second_tile"
-    },
-    {
-        "title" : "Third tile",
-        "route": "third_tile"
+        "title" : "Covid-19 Tracker",
+        "route": "covid_tracker"
     }
 ]

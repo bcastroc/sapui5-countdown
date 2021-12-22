@@ -1,0 +1,46 @@
+<mvc:View
+    controllerName="local.myUI5App.controller.covid.Covid_list"
+    xmlns="sap.m"
+    xmlns:mvc="sap.ui.core.mvc" 
+    height="100%"
+    >
+
+    <Page id="covid_list_page" showHeader="true">
+    <customHeader>
+        <Bar>
+            <contentMiddle>
+                <Title level="H1" text="List latest cases"/>
+            </contentMiddle>            
+        </Bar>
+    </customHeader>
+    <subHeader>
+        <Bar>
+            <contentLeft>
+                <Button text="Back to tracker" enabled="true"  press="onPressTracker" />
+                <Button text="Go to Graph" enabled="true"  press="onPressGraph" />
+            </contentLeft>
+            <contentRight>                
+                <ToggleButton icon="sap-icon://home" enabled="true" press="onPressHome" />
+            </contentRight>
+        </Bar>
+    </subHeader>
+    <List
+		id="latestList"
+		headerText="Total Cases: {latestModel>/data/summary/total}"
+		items="{
+			path: 'latestModel>/data/regional'
+		}">
+		<items>
+			<StandardListItem
+				title="{latestModel>loc}"
+				description="Total cases confirmed {latestModel>totalConfirmed}"				
+				info="Deaths {latestModel>deaths}"
+				
+			/>
+		</items>
+	</List>
+
+           
+    </Page>
+
+</mvc:View>

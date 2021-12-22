@@ -84,6 +84,27 @@
                     "target":[
                         "CountdownTarget"
                     ]
+                },
+                {
+                    "name" : "covid_tracker",
+                    "pattern": "covid_tracker",
+                    "target":[
+                        "CovidTarget"
+                    ]
+                },
+                {
+                    "name" : "covid_list",
+                    "pattern": "covid_list",
+                    "target":[
+                        "CovidListTarget"
+                    ]
+                },
+                {
+                    "name" : "covid_pie",
+                    "pattern": "covid_pie",
+                    "target":[
+                        "CovidPieTarget"
+                    ]
                 }
             ],
             "targets": {
@@ -106,6 +127,24 @@
                     "viewType": "XML",                                        
                     "viewId": "countdown.Countdown",
                     "viewName": "countdown.Countdown",
+                    "controlId": "main_app"
+                },
+                "CovidTarget": {
+                    "viewType": "XML",                                        
+                    "viewId": "covid.Covid",
+                    "viewName": "covid.Covid",
+                    "controlId": "main_app"
+                },
+                "CovidListTarget": {
+                    "viewType": "XML",                                        
+                    "viewId": "covid.Covid_list",
+                    "viewName": "covid.Covid_list",
+                    "controlId": "main_app"
+                },
+                "CovidPieTarget": {
+                    "viewType": "XML",                                        
+                    "viewId": "covid.Covid_pie",
+                    "viewName": "covid.Covid_pie",
                     "controlId": "main_app"
                 }
             }
