@@ -21,14 +21,9 @@ sap.ui.define([
 
 		formatAvailableToIcon : function(bAvailable) {
 			//return bAvailable ? "sap-icon://accept" : "sap-icon://decline";
-<<<<<<< HEAD
             if (bAvailable === " " || bAvailable === "N") return "sap-icon://future";
             if (bAvailable === "P") return "sap-icon://complete";
             if (bAvailable === "E") return "sap-icon://error";
-=======
-            if (bAvailable === "N") return "sap-icon://decline";
-            if (bAvailable === "P") return "sap-icon://accept";
->>>>>>> 12aefa125b91ad79b4855d97a9ee224a04c74ba2
 		}
 
 	});
