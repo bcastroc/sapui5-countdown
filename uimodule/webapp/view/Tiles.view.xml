@@ -15,7 +15,7 @@
             header="{tiles>title}"  
             press="onPress(${tiles>route})"
 		    frameType="OneByHalf" 
-            subheader="Subtitle">
+            subheader="{tiles>subtitle}">
 		
 	    </GenericTile>
 

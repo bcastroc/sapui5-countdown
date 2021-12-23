@@ -112,6 +112,13 @@
                     "target":[
                         "CPOQTarget"
                     ]
+                }, 
+                {
+                    "name" : "cpoq_pstmn",
+                    "pattern": "cpoq_pstmn",
+                    "target":[
+                        "CPOQPSTMNTarget"
+                    ]
                 }
             ],
             "targets": {
@@ -158,6 +165,12 @@
                     "viewType": "XML",                                        
                     "viewId": "cpoq.cpoq_list",
                     "viewName": "cpoq.cpoq_list",
+                    "controlId": "main_app"
+                },
+                "CPOQPSTMNTarget": {
+                    "viewType": "XML",                                        
+                    "viewId": "cpoq_pstmn.cpoq",
+                    "viewName": "cpoq_pstmn.cpoq",
                     "controlId": "main_app"
                 }
             }

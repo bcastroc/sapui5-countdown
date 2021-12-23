@@ -17,7 +17,13 @@ sap.ui.define([
 
             onPress: function (oRoute) {
                 console.log(oRoute);
-                this.getOwnerComponent().getRouter().navTo(oRoute);
+
+                if (oRoute.substring(0,3) === "ext") {
+                    const jsonObj = JSON.parse(this.getView().getModel("tiles").getJSON()).find(item => item.route === oRoute);
+                    console.log(`external url found ${jsonObj.url}`);
+                    sap.m.URLHelper.redirect(jsonObj.url);
+                }
+                else this.getOwnerComponent().getRouter().navTo(oRoute);
                 
             }
         });

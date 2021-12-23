@@ -1,14 +1,28 @@
 [
     {
         "title" : "xmas Countdown",
+        "subtitle": "until xmas day",
         "route": "countdown_tile"
     },
     {
         "title" : "Covid-19 Tracker",
+        "subtitle": "",
         "route": "covid_tracker"
     },
     {
         "title" : "Central PO queue",
+        "subtitle": ".json file based",
         "route": "cpoq_list"
+    },    
+    {
+        "title" : "Central PO queue",
+        "subtitle": "Postman mock",
+        "route": "cpoq_pstmn"
+    },
+    {
+        "title" : "Pollution Tracker",
+        "subtitle": "",
+        "route": "ext-pollution",
+        "url" : "http://localhost:8081/index.html"
     }
 ]
